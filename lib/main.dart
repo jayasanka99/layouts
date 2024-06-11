@@ -14,7 +14,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Layout 2"),
           backgroundColor: const Color(0xff9E00FF)
         ),
         body:Padding(
