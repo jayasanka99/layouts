@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
 
@@ -13,43 +12,87 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: const Color(0xff9E00FF)
-        ),
-        body:Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                height: 200,
-                width: double.infinity,
-                color: Color(0xff06FFA5),
-              ),
-              Container(
-                height: 200,
-                width: double.infinity,
-                color: Color(0xff06FFA5),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    height: 350,
-                    width: 175,
-                    color: Color(0xffFFE500),
+          appBar: AppBar(backgroundColor: const Color(0xff9E00FF)),
+          body: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: const Color(0xff06FFA5),
+                      ),
+                      height: 190,
+                      width: 185,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: const Color(0xff06FFA5),
+                      ),
+                      height: 190,
+                      width: 185,
+                    ),
+                  ],
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: const Color(0xff06FFA5),
                   ),
-                  Container(
-                    height: 350,
-                    width: 175,
-                    color: Color(0xffFFE500),
-                  ),
-                ],
-              )
-            ],
-          ),
-        )
-      ),
+                  height: 200,
+                  width: double.infinity,
+                ),
+                SizedBox(
+                  height: 350,
+                  child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              height: 200,
+                              width: 175,
+                              color: const Color(0xffFFE500),
+                            ),
+                            Container(
+                              height: 140,
+                              width: 175,
+                              color: const Color(0xffFFE500),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              height: 110,
+                              width: 175,
+                              color: const Color(0xff7752FE),
+                            ),
+                            Container(
+                              height: 110,
+                              width: 175,
+                              color: const Color(0xff0E00AC),
+                            ),
+                            Container(
+                              height: 110,
+                              width: 175,
+                              color: Color(0xff7752FE),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                ),
+              ],
+            ),
+          )),
     );
   }
 }
